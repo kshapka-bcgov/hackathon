@@ -15,14 +15,18 @@
             <option value="Waste Management">Waste Management</option>
             <option value="Conservation">Conservation</option>
         </select></br> -->
-        <input id="custom-activity">
-		<input id="activity-score" type="number">
+		<label for="custom-activity">Activity</label>
+        <input id="custom-activity" name="custom-activity">
+		<br>
+		<label for="activity-score">Activity Score</label>
+		<input id="activity-score" name="activity-score" type="number">
         <!-- <button id="submit-custom-activity" onClick="submitCustomActivity">Add Activity</button></br> -->
     </form>
     <button id="submit-activity">Submit Activity</button>
     <h2>Activities Completed</h2>
     <ul id="activities-completed">
     </ul>
+	<div id="score-total"></div>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script src="hackathon.js"></script>
   </body>
