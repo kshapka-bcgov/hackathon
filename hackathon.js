@@ -8,26 +8,9 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
 	$("#submit-activity").on("click", (event) => {
-		
+		const score = $("#activity-score").val();
+		const activity = $("#custom-activity").val();
+
+		$("#activities-completed").append("<li>" + activity + " - " + score + "</li>");
 	});
 });
-
-function submitCustomActivity(event) {
-    event.preventDefault();
-    let option = document.createElement("option");
-    option.text = event.target.value;
-    activitiesSelectBox.add(option);
-}
-
-function submitActivity(event) {
-    event.preventDefault();
-    let li = document.createElement("li");
-    li.appendChild(document.createTextNode(event.target.value));
-    ul.appendChild(li);
-}
-
-function submitActivityLog(event) {
-	let test = $("#activity-score");
-	let score = getElementById("activity-score");
-	console.log(test);
-}
